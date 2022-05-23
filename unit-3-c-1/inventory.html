@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #all_products{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        gap: 30px;
+      }
+      #all_products>div{
+        height: auto;
+        width: 350px;
+        /* border: 1px solid blue; */
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 20px;
+        padding: 30px;
+      }
+      img{
+        max-width: 100%;
+        max-height: 100%;
+      }
+      #add_more_product{
+        height: 60px;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        background-color: #ED0331;
+        color: white;
+        border-radius: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 50px;
+      }
+      #remove_product{
+        height: 40px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        background-color: #ED0331;
+        color: white;
+        border-radius: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+    </style>
+  </head>
+
+  <style></style>
+
+  <body>
+    <div id="navbar">
+      <!--Create Add More Product button here, give id as "add_more_product". avoid making spelling mistakes in HTML id's-->
+      <button id="add_more_product" onclick="addMore()">Add More Product</button>
+    </div>
+    <div id="all_products">
+      <!--append all products data here in grid format-->
+      <!-- The Remove Product button will have id as "remove_product" -->
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/inventory.js"></script>
